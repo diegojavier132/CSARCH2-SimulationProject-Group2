@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSARCH2 Simulation Project</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="address"></div>
+    <h1>CSARCH2 SIMULATION PROJECT</h1>
+    <h5>Group 2</h5>
+    <h6>Created by: Pastrana, Susada, Cai, Javier</h6>
+    <div class="main">
+      <div class="container2">
+        <form id="project">
+          <h2>CACHE MEMORY (DIRECT)</h2>
+          <div class="text_container">
+            <label>Cache Memory Size</label>
+            <input
+              type="text"
+              placeholder="Enter Cache Memory Size"
+              id="cacheSize"
+              name="cacheSize"
+              required
+            />
+          </div>
+          <div class="radbutton-container">
+            <select
+              type="radio"
+              name="cacheOption"
+              class="option"
+              id="cacheOption"
+            >
+              <option selected disabled hidden>B/W</option>
+              <option value="Blocks">Blocks</option>
+              <option value="Words">Words</option>
+            </select>
+          </div>
+
+          <div class="text_container">
+            <label>Block Size</label>
+            <input
+              type="number"
+              placeholder="Enter Block Size"
+              id="block"
+              name="block"
+              required
+            />
+          </div>
+
+          <div class="text_container">
+            <label>Main Memory Size</label>
+            <input
+              type="text"
+              placeholder="Enter MM Memory Size"
+              id="mmSize"
+              name="mmSize"
+              required
+            />
+          </div>
+          <div class="radbutton-container">
+            <select type="radio" name="mmOption" class="option" id="mmOption">
+              <option selected disabled hidden>B/W</option>
+              <option value="Blocks">Blocks</option>
+              <option value="Words">Words</option>
+            </select>
+          </div>
+
+          <div class="text_container">
+            <label>Main Memory Sequence</label>
+            <input
+              type="text"
+              placeholder="Enter Main Memory Sequence"
+              id="memory"
+              name="memory"
+              required
+            />
+          </div>
+
+          <div class="text_container">
+            <label>Cache Access Time</label>
+            <input
+              type="number"
+              placeholder="Enter Cache Access Time"
+              id="cacheTime"
+              name="cacheTime"
+              required
+            />
+          </div>
+
+          <div class="text_container">
+            <label>Memory Access Time</label>
+            <input
+              type="number"
+              placeholder="Enter Memory Access Time"
+              id="memoryTime"
+              name="memoryTime"
+              required
+            />
+          </div>
+        </form>
+        <p id="error"></p>
+        <button id="submitBtn">Enter</button>
+      </div>
+      <div class="answer2">
+        <h2>Results</h2>
+        <p id="firstInput">Cache Memory Size: None</p>
+        <p id="secondInput">Cache Memory Option: None</p>
+        <p id="thirdInput">Block Size: None</p>
+        <p id="fourthInput">Main Memory Size: None</p>
+        <p id="fifthInput">Main Memory Option: None</p>
+        <p id="sixthInput">Main Memory Sequence: None</p>
+        <p id="seventhInput">Cache Access Time: None</p>
+        <p id="eighthInput">Memory Access Time: None</p>
+        <p id="cacheHit">Cache Hit: 0</p>
+        <p id="cacheMiss">Cache Miss: 0</p>
+        <p id="missPenalty">Miss Penalty: 0ns</p>
+        <p id="averageMAT">Average Memory Access Time: 0ns</p>
+        <p id="totalMAT">Total Memory Access Time: 0ns</p>
+        <p id="cacheMemory">Cache Memory: []</p>
+        <button id="printBtn">Print</button>
+      </div>
+    </div>
+  </body>
+</html>
